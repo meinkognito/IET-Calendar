@@ -7,23 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D084E7227BD610C0093FCC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D084E7127BD610C0093FCC2 /* Assets.xcassets */; };
+		2D084E7627BD61620093FCC2 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D084E7527BD61620093FCC2 /* WelcomeView.swift */; };
 		2D14F43D27B56A7600F4A6AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D14F43C27B56A7600F4A6AC /* AppDelegate.swift */; };
 		2D14F43F27B56A7600F4A6AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D14F43E27B56A7600F4A6AC /* SceneDelegate.swift */; };
 		2D14F44127B56A7600F4A6AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D14F44027B56A7600F4A6AC /* ViewController.swift */; };
 		2D14F44427B56A7600F4A6AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D14F44227B56A7600F4A6AC /* Main.storyboard */; };
-		2D14F44627B56A7A00F4A6AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D14F44527B56A7A00F4A6AC /* Assets.xcassets */; };
 		2D14F44927B56A7A00F4A6AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D14F44727B56A7A00F4A6AC /* LaunchScreen.storyboard */; };
+		2D14F45427B5754700F4A6AC /* GuideTextBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D14F45127B5754700F4A6AC /* GuideTextBlock.swift */; };
+		2D14F45527B5754700F4A6AC /* Month.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D14F45227B5754700F4A6AC /* Month.swift */; };
+		2D14F45627B5754700F4A6AC /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D14F45327B5754700F4A6AC /* ModelData.swift */; };
+		2D14F45927B5757F00F4A6AC /* guideTextBlocksData.json in Resources */ = {isa = PBXBuildFile; fileRef = 2D14F45727B5757F00F4A6AC /* guideTextBlocksData.json */; };
+		2D14F45A27B5757F00F4A6AC /* monthsData.json in Resources */ = {isa = PBXBuildFile; fileRef = 2D14F45827B5757F00F4A6AC /* monthsData.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D084E7127BD610C0093FCC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2D084E7527BD61620093FCC2 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		2D14F43927B56A7600F4A6AC /* IET Calendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IET Calendar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D14F43C27B56A7600F4A6AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2D14F43E27B56A7600F4A6AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		2D14F44027B56A7600F4A6AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2D14F44327B56A7600F4A6AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		2D14F44527B56A7A00F4A6AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D14F44827B56A7A00F4A6AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D14F44A27B56A7A00F4A6AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D14F45127B5754700F4A6AC /* GuideTextBlock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideTextBlock.swift; sourceTree = "<group>"; };
+		2D14F45227B5754700F4A6AC /* Month.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Month.swift; sourceTree = "<group>"; };
+		2D14F45327B5754700F4A6AC /* ModelData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		2D14F45727B5757F00F4A6AC /* guideTextBlocksData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = guideTextBlocksData.json; sourceTree = "<group>"; };
+		2D14F45827B5757F00F4A6AC /* monthsData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = monthsData.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,14 +69,36 @@
 			isa = PBXGroup;
 			children = (
 				2D14F43C27B56A7600F4A6AC /* AppDelegate.swift */,
+				2D084E7527BD61620093FCC2 /* WelcomeView.swift */,
 				2D14F43E27B56A7600F4A6AC /* SceneDelegate.swift */,
 				2D14F44027B56A7600F4A6AC /* ViewController.swift */,
 				2D14F44227B56A7600F4A6AC /* Main.storyboard */,
-				2D14F44527B56A7A00F4A6AC /* Assets.xcassets */,
 				2D14F44727B56A7A00F4A6AC /* LaunchScreen.storyboard */,
+				2D084E7127BD610C0093FCC2 /* Assets.xcassets */,
 				2D14F44A27B56A7A00F4A6AC /* Info.plist */,
+				2D14F45027B5754700F4A6AC /* Model */,
+				2D14F45D27B575B800F4A6AC /* Resources */,
 			);
 			path = "IET Calendar";
+			sourceTree = "<group>";
+		};
+		2D14F45027B5754700F4A6AC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2D14F45127B5754700F4A6AC /* GuideTextBlock.swift */,
+				2D14F45227B5754700F4A6AC /* Month.swift */,
+				2D14F45327B5754700F4A6AC /* ModelData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2D14F45D27B575B800F4A6AC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2D14F45727B5757F00F4A6AC /* guideTextBlocksData.json */,
+				2D14F45827B5757F00F4A6AC /* monthsData.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,8 +160,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D14F44927B56A7A00F4A6AC /* LaunchScreen.storyboard in Resources */,
-				2D14F44627B56A7A00F4A6AC /* Assets.xcassets in Resources */,
+				2D14F45A27B5757F00F4A6AC /* monthsData.json in Resources */,
 				2D14F44427B56A7600F4A6AC /* Main.storyboard in Resources */,
+				2D084E7227BD610C0093FCC2 /* Assets.xcassets in Resources */,
+				2D14F45927B5757F00F4A6AC /* guideTextBlocksData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,8 +175,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D14F44127B56A7600F4A6AC /* ViewController.swift in Sources */,
+				2D14F45427B5754700F4A6AC /* GuideTextBlock.swift in Sources */,
 				2D14F43D27B56A7600F4A6AC /* AppDelegate.swift in Sources */,
+				2D14F45527B5754700F4A6AC /* Month.swift in Sources */,
 				2D14F43F27B56A7600F4A6AC /* SceneDelegate.swift in Sources */,
+				2D14F45627B5754700F4A6AC /* ModelData.swift in Sources */,
+				2D084E7627BD61620093FCC2 /* WelcomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,7 +257,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -272,7 +312,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

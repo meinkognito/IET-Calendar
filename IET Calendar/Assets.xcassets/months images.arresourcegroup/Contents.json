@@ -1,0 +1,44 @@
+{
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "resources" : [
+    {
+      "filename" : "april.arreferenceimage"
+    },
+    {
+      "filename" : "august.arreferenceimage"
+    },
+    {
+      "filename" : "december.arreferenceimage"
+    },
+    {
+      "filename" : "february.arreferenceimage"
+    },
+    {
+      "filename" : "january.arreferenceimage"
+    },
+    {
+      "filename" : "july.arreferenceimage"
+    },
+    {
+      "filename" : "june.arreferenceimage"
+    },
+    {
+      "filename" : "march.arreferenceimage"
+    },
+    {
+      "filename" : "may.arreferenceimage"
+    },
+    {
+      "filename" : "november.arreferenceimage"
+    },
+    {
+      "filename" : "october.arreferenceimage"
+    },
+    {
+      "filename" : "september.arreferenceimage"
+    }
+  ]
+}
