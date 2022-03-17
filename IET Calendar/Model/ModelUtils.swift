@@ -1,5 +1,7 @@
 import Foundation
 
+// NSAttributedString extension for creating hyperlinks
+
 extension NSAttributedString {
   static func makeHyperLink(for path: String, in string: String, as substring: String) -> NSAttributedString {
     let result = NSMutableAttributedString(string: string)
