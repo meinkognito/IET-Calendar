@@ -1,8 +1,7 @@
 import Foundation
 import UIKit
 
-let lightGray = UIColor(red: 233 / 255, green: 233 / 255, blue: 233 / 255, alpha: 1)
-let darkGray = UIColor(red: 97 / 255, green: 97 / 255, blue: 97 / 255, alpha: 1)
+let launchCount = UserDefaults.standard.integer(forKey: "launchCount")
 
 var guideTextBlocks: [GuideTextBlock] = load("guideTextBlocksData.json")
 var months: [Month] = load("monthsData.json")

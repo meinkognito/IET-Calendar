@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Guide View Controller-->
+        <!--GuideViewContoller-->
         <scene sceneID="eiC-ar-XWx">
             <objects>
-                <viewController id="egp-aI-q5H" customClass="GuideViewController" customModule="IET_Calendar" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="GuideViewContoller" id="egp-aI-q5H" customClass="GuideViewController" customModule="IET_Calendar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Tg1-Mt-OkO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -42,9 +42,6 @@
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="17"/>
                                     <color key="baseForegroundColor" red="0.38038825990000003" green="0.38038951160000001" blue="0.38039231299999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
-                                <connections>
-                                    <segue destination="YjN-ht-aKc" kind="showDetail" id="L9G-q9-rZF"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ZkE-w6-dZI"/>
@@ -70,21 +67,31 @@
             </objects>
             <point key="canvasLocation" x="-1126.0869565217392" y="82.366071428571431"/>
         </scene>
-        <!--SecondScreen-->
-        <scene sceneID="zxf-x8-6bg">
+        <!--MainScreen-->
+        <scene sceneID="TeB-aS-JWJ">
             <objects>
-                <viewController title="SecondScreen" id="YjN-ht-aKc" customClass="ViewController" customModule="IET_Calendar" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="CVj-s2-Li1">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                <viewController title="MainScreen" id="Ztq-WF-15I" customClass="MainViewController" customModule="IET_Calendar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LYD-zy-6RQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="dPw-TK-A6x"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mHN-Dd-iL6">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                            </arscnView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nQi-eH-nAC"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mHN-Dd-iL6" firstAttribute="top" secondItem="LYD-zy-6RQ" secondAttribute="top" id="Cbe-WK-Hwc"/>
+                            <constraint firstItem="nQi-eH-nAC" firstAttribute="trailing" secondItem="mHN-Dd-iL6" secondAttribute="trailing" id="OOX-Ni-jOG"/>
+                            <constraint firstItem="nQi-eH-nAC" firstAttribute="bottom" secondItem="mHN-Dd-iL6" secondAttribute="bottom" id="t8W-6L-1xB"/>
+                            <constraint firstItem="mHN-Dd-iL6" firstAttribute="leading" secondItem="nQi-eH-nAC" secondAttribute="leading" id="y3u-Gh-fjT"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="zmT-sQ-4rq"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rvI-jW-xDT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wgc-je-dc6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-190" y="82"/>
+            <point key="canvasLocation" x="-75" y="82"/>
         </scene>
     </scenes>
     <color key="tintColor" red="0.91372549020000005" green="0.91372549020000005" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>

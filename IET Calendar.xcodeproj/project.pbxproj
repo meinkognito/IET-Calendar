@@ -20,6 +20,7 @@
 		2D14F45A27B5757F00F4A6AC /* monthsData.json in Resources */ = {isa = PBXBuildFile; fileRef = 2D14F45827B5757F00F4A6AC /* monthsData.json */; };
 		2D47FB5627E3624C00FC699F /* GuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D47FB5527E3624C00FC699F /* GuideViewController.swift */; };
 		2D47FB5827E370F000FC699F /* ModelUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D47FB5727E370F000FC699F /* ModelUtils.swift */; };
+		2D47FB5B27E37FDC00FC699F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D47FB5A27E37FDC00FC699F /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		2D14F45827B5757F00F4A6AC /* monthsData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = monthsData.json; sourceTree = "<group>"; };
 		2D47FB5527E3624C00FC699F /* GuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideViewController.swift; sourceTree = "<group>"; };
 		2D47FB5727E370F000FC699F /* ModelUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelUtils.swift; sourceTree = "<group>"; };
+		2D47FB5A27E37FDC00FC699F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,10 +88,10 @@
 		2D14F45027B5754700F4A6AC /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				2D14F45127B5754700F4A6AC /* GuideTextBlock.swift */,
 				2D14F45227B5754700F4A6AC /* Month.swift */,
 				2D14F45327B5754700F4A6AC /* ModelData.swift */,
 				2D47FB5727E370F000FC699F /* ModelUtils.swift */,
+				2D14F45127B5754700F4A6AC /* GuideTextBlock.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -106,8 +108,9 @@
 		2D47FB5927E378A200FC699F /* ViewContollers */ = {
 			isa = PBXGroup;
 			children = (
-				2D47FB5527E3624C00FC699F /* GuideViewController.swift */,
 				2D14F44027B56A7600F4A6AC /* ViewController.swift */,
+				2D47FB5527E3624C00FC699F /* GuideViewController.swift */,
+				2D47FB5A27E37FDC00FC699F /* MainViewController.swift */,
 			);
 			path = ViewContollers;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 				2D14F45427B5754700F4A6AC /* GuideTextBlock.swift in Sources */,
 				2D14F43D27B56A7600F4A6AC /* AppDelegate.swift in Sources */,
 				2D14F45527B5754700F4A6AC /* Month.swift in Sources */,
+				2D47FB5B27E37FDC00FC699F /* MainViewController.swift in Sources */,
 				2D14F43F27B56A7600F4A6AC /* SceneDelegate.swift in Sources */,
 				2D14F45627B5754700F4A6AC /* ModelData.swift in Sources */,
 			);
