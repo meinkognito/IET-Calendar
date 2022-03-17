@@ -1,24 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="egp-aI-q5H">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Guide View Controller-->
+        <scene sceneID="eiC-ar-XWx">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="egp-aI-q5H" customClass="GuideViewController" customModule="IET_Calendar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Tg1-Mt-OkO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Добро пожаловать!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hpV-ml-IHs">
+                                <rect key="frame" x="20" y="64" width="379" height="41"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                <color key="textColor" red="0.91372549020000005" green="0.91372549020000005" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="aCo-kh-ctI">
+                                <rect key="frame" x="20" y="120" width="374" height="662"/>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uTl-q9-H0s">
+                                <rect key="frame" x="132" y="802" width="150" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="KC1-g7-Yw9"/>
+                                    <constraint firstAttribute="height" constant="40" id="p0T-Cc-cwY"/>
+                                </constraints>
+                                <color key="tintColor" red="0.91372549020000005" green="0.91372549020000005" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Продолжить" cornerStyle="medium">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.91372549020000005" green="0.91372549020000005" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="17"/>
+                                    <color key="baseForegroundColor" red="0.38038825990000003" green="0.38038951160000001" blue="0.38039231299999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="YjN-ht-aKc" kind="showDetail" id="L9G-q9-rZF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ZkE-w6-dZI"/>
+                        <color key="backgroundColor" red="0.38038825990000003" green="0.38038951160000001" blue="0.38039231299999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="ZkE-w6-dZI" firstAttribute="trailing" secondItem="hpV-ml-IHs" secondAttribute="trailing" constant="15" id="4Ww-da-F2X" userLabel="Safe Area.trailing = Добро пожаловать!.trailing + 20"/>
+                            <constraint firstItem="aCo-kh-ctI" firstAttribute="top" secondItem="hpV-ml-IHs" secondAttribute="bottom" constant="15" id="7F0-iA-NPq"/>
+                            <constraint firstItem="hpV-ml-IHs" firstAttribute="leading" secondItem="ZkE-w6-dZI" secondAttribute="leading" constant="20" id="EYn-yV-syi"/>
+                            <constraint firstItem="ZkE-w6-dZI" firstAttribute="bottom" secondItem="uTl-q9-H0s" secondAttribute="bottom" constant="20" id="HuI-Ya-xry"/>
+                            <constraint firstItem="uTl-q9-H0s" firstAttribute="top" secondItem="aCo-kh-ctI" secondAttribute="bottom" constant="20" id="OrO-wF-76J"/>
+                            <constraint firstItem="aCo-kh-ctI" firstAttribute="leading" secondItem="ZkE-w6-dZI" secondAttribute="leading" constant="20" id="QjO-Tt-iJI"/>
+                            <constraint firstItem="hpV-ml-IHs" firstAttribute="top" secondItem="ZkE-w6-dZI" secondAttribute="top" constant="20" id="dOu-KI-6fC"/>
+                            <constraint firstItem="aCo-kh-ctI" firstAttribute="centerX" secondItem="Tg1-Mt-OkO" secondAttribute="centerX" id="kMy-HZ-aXE"/>
+                            <constraint firstItem="ZkE-w6-dZI" firstAttribute="trailing" secondItem="aCo-kh-ctI" secondAttribute="trailing" constant="20" id="sFM-Ye-MvQ"/>
+                            <constraint firstItem="uTl-q9-H0s" firstAttribute="centerX" secondItem="Tg1-Mt-OkO" secondAttribute="centerX" id="uBZ-VZ-6Cu"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="stackView" destination="aCo-kh-ctI" id="60d-TI-FdZ"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tAE-wr-Ird" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-1126.0869565217392" y="82.366071428571431"/>
+        </scene>
+        <!--SecondScreen-->
+        <scene sceneID="zxf-x8-6bg">
+            <objects>
+                <viewController title="SecondScreen" id="YjN-ht-aKc" customClass="ViewController" customModule="IET_Calendar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CVj-s2-Li1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="dPw-TK-A6x"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="zmT-sQ-4rq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rvI-jW-xDT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-190" y="82"/>
         </scene>
     </scenes>
+    <color key="tintColor" red="0.91372549020000005" green="0.91372549020000005" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
