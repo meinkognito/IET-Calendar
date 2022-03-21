@@ -21,6 +21,7 @@
 		2D47FB5627E3624C00FC699F /* GuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D47FB5527E3624C00FC699F /* GuideViewController.swift */; };
 		2D47FB5827E370F000FC699F /* ModelUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D47FB5727E370F000FC699F /* ModelUtils.swift */; };
 		2D47FB5B27E37FDC00FC699F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D47FB5A27E37FDC00FC699F /* MainViewController.swift */; };
+		2DD2A64827E8DC9B00AC94D6 /* months videos in Resources */ = {isa = PBXBuildFile; fileRef = 2DD2A64727E8DC9B00AC94D6 /* months videos */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		2D47FB5527E3624C00FC699F /* GuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideViewController.swift; sourceTree = "<group>"; };
 		2D47FB5727E370F000FC699F /* ModelUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelUtils.swift; sourceTree = "<group>"; };
 		2D47FB5A27E37FDC00FC699F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		2DD2A64727E8DC9B00AC94D6 /* months videos */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "months videos"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 		2D14F43B27B56A7600F4A6AC /* IET Calendar */ = {
 			isa = PBXGroup;
 			children = (
+				2DD2A64727E8DC9B00AC94D6 /* months videos */,
 				2D14F43C27B56A7600F4A6AC /* AppDelegate.swift */,
 				2D14F43E27B56A7600F4A6AC /* SceneDelegate.swift */,
 				2D14F44227B56A7600F4A6AC /* Main.storyboard */,
@@ -125,6 +128,7 @@
 				2D14F43527B56A7600F4A6AC /* Sources */,
 				2D14F43627B56A7600F4A6AC /* Frameworks */,
 				2D14F43727B56A7600F4A6AC /* Resources */,
+				2DA304D027E8D2A000906AFB /* Run Script */,
 			);
 			buildRules = (
 			);
@@ -177,11 +181,33 @@
 				2D14F45A27B5757F00F4A6AC /* monthsData.json in Resources */,
 				2D14F44427B56A7600F4A6AC /* Main.storyboard in Resources */,
 				2D084E7227BD610C0093FCC2 /* Assets.xcassets in Resources */,
+				2DD2A64827E8DC9B00AC94D6 /* months videos in Resources */,
 				2D14F45927B5757F00F4A6AC /* guideTextBlocksData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2DA304D027E8D2A000906AFB /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "REVEAL_APP_PATH=$(mdfind kMDItemCFBundleIdentifier=\"com.ittybittyapps.Reveal2\" | head -n 1)\nBUILD_SCRIPT_PATH=\"${REVEAL_APP_PATH}/Contents/SharedSupport/Scripts/reveal_server_build_phase.sh\"\nif [ \"${REVEAL_APP_PATH}\" -a -e \"${BUILD_SCRIPT_PATH}\" ]; then\n    \"${BUILD_SCRIPT_PATH}\"\nelse\n    echo \"Reveal Server not loaded: Cannot find a compatible Reveal app.\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2D14F43527B56A7600F4A6AC /* Sources */ = {

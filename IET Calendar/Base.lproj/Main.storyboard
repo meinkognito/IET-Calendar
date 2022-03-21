@@ -88,6 +88,9 @@
                             <constraint firstItem="mHN-Dd-iL6" firstAttribute="leading" secondItem="nQi-eH-nAC" secondAttribute="leading" id="y3u-Gh-fjT"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="sceneView" destination="mHN-Dd-iL6" id="ux8-st-EIk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wgc-je-dc6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
