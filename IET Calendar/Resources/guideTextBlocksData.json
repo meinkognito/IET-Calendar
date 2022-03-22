@@ -14,11 +14,11 @@
   {
     "id": 4,
     "description": "Информация об образовательных траекториях Политеха представлена в блоке, отмеченным значком",
-    "imageName": "iot"
+    "imageName": "IETIcon"
   },
   {
     "id": 5,
     "description": "Информация об иллюстрации представлена в блоке, отмеченным значком",
-    "imageName": "infoWhite"
+    "imageName": "whiteInfoIcon"
   }
 ]
