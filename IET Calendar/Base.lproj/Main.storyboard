@@ -41,7 +41,7 @@
                                     <color key="baseBackgroundColor" red="0.91372549020000005" green="0.91372549020000005" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="Ztq-WF-15I" kind="show" id="veb-zM-ONh"/>
+                                    <segue destination="Ztq-WF-15I" kind="show" identifier="MainSegue" id="veb-zM-ONh"/>
                                 </connections>
                             </button>
                         </subviews>

@@ -1,9 +1,9 @@
 import UIKit
 
+// ContentStackView is related to all info in BottomSheet, that will be shown
+
 var contentStackView: UIView = {
   let view = UIView()
-
-  // MARK: - Content Stack View
 
   lazy var contentStack: UIStackView = {
     let stackView = UIStackView(arrangedSubviews: [infoImageView, ietView])
@@ -33,8 +33,6 @@ var contentStackView: UIView = {
       contentStack.bottomAnchor.constraint(equalTo: view.bottomAnchor),
     ])
   }
-
-  // MARK: - infoImageView
 
   lazy var infoImageView: UIView = {
     let view = UIView()

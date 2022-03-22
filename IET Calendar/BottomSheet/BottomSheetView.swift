@@ -1,5 +1,7 @@
 import UIKit
 
+// BottomSheetView's computed views and constants related to it
+
 var bottomSheetView: UIView = {
   let view = UIView()
   view.backgroundColor = lightGray

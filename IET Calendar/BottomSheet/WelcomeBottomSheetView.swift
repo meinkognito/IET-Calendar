@@ -1,5 +1,7 @@
 import UIKit
 
+// WelcomeBottomSheetView is related to "welcome message" to user which helps him/her what to do
+
 var welcomeBottomSheetView: UIView = {
   let view = UIView()
   view.backgroundColor = lightGray

@@ -5,12 +5,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
   func scene(_ scene: UIScene, willConnectTo _: UISceneSession, options _: UIScene.ConnectionOptions) {
     guard let _ = (scene as? UIWindowScene) else { return }
-
-    UserDefaults.standard.set(launchCount + 1, forKey: "launchCount")
-
-//    guard launchCount != 0 else {
-//
-//    }
   }
 
   func sceneDidDisconnect(_: UIScene) {}

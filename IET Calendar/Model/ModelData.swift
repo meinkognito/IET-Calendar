@@ -1,7 +1,9 @@
 import Foundation
 import UIKit
 
-let launchCount = UserDefaults.standard.integer(forKey: "launchCount")
+// Data which is connected to Month struct
+
+var launchCount = UserDefaults.standard.integer(forKey: "launchCount")
 
 var guideTextBlocks: [GuideTextBlock] = load("guideTextBlocksData.json")
 var months: [String: Month] = dictLoad("monthsData.json")

@@ -1,6 +1,8 @@
 import ARKit
 import UIKit
 
+// MainViewController holds everything connected to AR and shows info in BottomSheet
+
 class MainViewController: UIViewController, ARSCNViewDelegate {
   @IBOutlet var sceneView: ARSCNView!
 
@@ -29,8 +31,7 @@ class MainViewController: UIViewController, ARSCNViewDelegate {
     let configuration = ARImageTrackingConfiguration()
 
     if let trackedImages = ARReferenceImage.referenceImages(inGroupNamed: "months images",
-                                                            bundle: Bundle.main)
-    {
+        bundle: Bundle.main) {
       configuration.trackingImages = trackedImages
       configuration.maximumNumberOfTrackedImages = 1
     }
@@ -51,9 +52,16 @@ class MainViewController: UIViewController, ARSCNViewDelegate {
     sceneView.session.pause()
   }
 
+  // AR-part of the app
+  // renderer(_, didAdd) is used when app recognizes a new month's image
+
   func renderer(_: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
-    guard let imageAnchor = anchor as? ARImageAnchor else { return }
-    guard let month = imageAnchor.referenceImage.name else { return }
+    guard let imageAnchor = anchor as? ARImageAnchor else {
+      return
+    }
+    guard let month = imageAnchor.referenceImage.name else {
+      return
+    }
 
     DispatchQueue.main.async {
       UIView.animate(withDuration: 0.4) {
@@ -62,18 +70,15 @@ class MainViewController: UIViewController, ARSCNViewDelegate {
       self.setupPanGesture()
       self.view.layoutIfNeeded()
     }
-    
-    
 
     let player = AVPlayer(playerItem: AVPlayerItem(url: Bundle.main.url(
-      forResource: month, withExtension: "mp4", subdirectory: "months videos"
+        forResource: month, withExtension: "mp4", subdirectory: "months videos"
     )!))
 
     player.play()
 
     NotificationCenter.default.addObserver(forName: .AVPlayerItemDidPlayToEndTime,
-                                           object: player.currentItem, queue: nil)
-    { _ in
+        object: player.currentItem, queue: nil) { _ in
       player.seek(to: CMTime.zero)
       player.play()
     }
@@ -101,6 +106,9 @@ class MainViewController: UIViewController, ARSCNViewDelegate {
     node.addChildNode(planeNode)
   }
 
+  /* renderer(_, didUpdate) is used when app recognizes the month's image,
+   that has previously recognized  in order to update info */
+
   func renderer(_: SCNSceneRenderer, didUpdate _: SCNNode, for anchor: ARAnchor) {
     guard let imageAnchor = anchor as? ARImageAnchor else { return }
     guard let month = imageAnchor.referenceImage.name else { return }
@@ -112,7 +120,7 @@ class MainViewController: UIViewController, ARSCNViewDelegate {
       infoImageTextView.text = monthData.imageTextBlock
 
       ietTextView.text = monthData.mainTextBlock
-      
+
       self.view.layoutIfNeeded()
     }
   }
@@ -148,6 +156,8 @@ class MainViewController: UIViewController, ARSCNViewDelegate {
     heightConstraint?.isActive = true
     bottomConstraint?.isActive = true
   }
+
+  // Some @objc methods in order to handle user gestures
 
   @objc func handleCloseAction() {
     animateDismissing()
@@ -188,6 +198,8 @@ class MainViewController: UIViewController, ARSCNViewDelegate {
       break
     }
   }
+
+  // BottomSheet animation block
 
   func animateDismissing() {
     dimmedView.alpha = 0.6

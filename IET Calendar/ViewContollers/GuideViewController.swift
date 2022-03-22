@@ -1,5 +1,7 @@
 import UIKit
 
+// GuideViewController is related to Guide page
+
 class GuideViewController: UIViewController {
   @IBOutlet var stackView: UIStackView!
 
