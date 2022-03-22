@@ -10,7 +10,6 @@
 		2D084E7227BD610C0093FCC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D084E7127BD610C0093FCC2 /* Assets.xcassets */; };
 		2D14F43D27B56A7600F4A6AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D14F43C27B56A7600F4A6AC /* AppDelegate.swift */; };
 		2D14F43F27B56A7600F4A6AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D14F43E27B56A7600F4A6AC /* SceneDelegate.swift */; };
-		2D14F44127B56A7600F4A6AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D14F44027B56A7600F4A6AC /* ViewController.swift */; };
 		2D14F44427B56A7600F4A6AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D14F44227B56A7600F4A6AC /* Main.storyboard */; };
 		2D14F44927B56A7A00F4A6AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D14F44727B56A7A00F4A6AC /* LaunchScreen.storyboard */; };
 		2D14F45427B5754700F4A6AC /* GuideTextBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D14F45127B5754700F4A6AC /* GuideTextBlock.swift */; };
@@ -21,6 +20,9 @@
 		2D47FB5627E3624C00FC699F /* GuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D47FB5527E3624C00FC699F /* GuideViewController.swift */; };
 		2D47FB5827E370F000FC699F /* ModelUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D47FB5727E370F000FC699F /* ModelUtils.swift */; };
 		2D47FB5B27E37FDC00FC699F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D47FB5A27E37FDC00FC699F /* MainViewController.swift */; };
+		2DBB4E9927E9D85200CEA2FB /* ContentStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBB4E9827E9D85200CEA2FB /* ContentStackView.swift */; };
+		2DBB4EAC27EA0CDD00CEA2FB /* WelcomeBottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBB4EAB27EA0CDD00CEA2FB /* WelcomeBottomSheetView.swift */; };
+		2DBB4EAE27EA344F00CEA2FB /* BottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBB4EAD27EA344F00CEA2FB /* BottomSheetView.swift */; };
 		2DD2A64827E8DC9B00AC94D6 /* months videos in Resources */ = {isa = PBXBuildFile; fileRef = 2DD2A64727E8DC9B00AC94D6 /* months videos */; };
 /* End PBXBuildFile section */
 
@@ -29,7 +31,6 @@
 		2D14F43927B56A7600F4A6AC /* IET Calendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IET Calendar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D14F43C27B56A7600F4A6AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2D14F43E27B56A7600F4A6AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2D14F44027B56A7600F4A6AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2D14F44327B56A7600F4A6AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2D14F44827B56A7A00F4A6AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D14F44A27B56A7A00F4A6AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -41,6 +42,9 @@
 		2D47FB5527E3624C00FC699F /* GuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideViewController.swift; sourceTree = "<group>"; };
 		2D47FB5727E370F000FC699F /* ModelUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelUtils.swift; sourceTree = "<group>"; };
 		2D47FB5A27E37FDC00FC699F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		2DBB4E9827E9D85200CEA2FB /* ContentStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentStackView.swift; sourceTree = "<group>"; };
+		2DBB4EAB27EA0CDD00CEA2FB /* WelcomeBottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeBottomSheetView.swift; sourceTree = "<group>"; };
+		2DBB4EAD27EA344F00CEA2FB /* BottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetView.swift; sourceTree = "<group>"; };
 		2DD2A64727E8DC9B00AC94D6 /* months videos */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "months videos"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,6 +85,7 @@
 				2D14F44727B56A7A00F4A6AC /* LaunchScreen.storyboard */,
 				2D084E7127BD610C0093FCC2 /* Assets.xcassets */,
 				2D14F44A27B56A7A00F4A6AC /* Info.plist */,
+				2DBB4EAF27EA392300CEA2FB /* BottomSheet */,
 				2D14F45027B5754700F4A6AC /* Model */,
 				2D14F45D27B575B800F4A6AC /* Resources */,
 				2D47FB5927E378A200FC699F /* ViewContollers */,
@@ -111,11 +116,20 @@
 		2D47FB5927E378A200FC699F /* ViewContollers */ = {
 			isa = PBXGroup;
 			children = (
-				2D14F44027B56A7600F4A6AC /* ViewController.swift */,
 				2D47FB5527E3624C00FC699F /* GuideViewController.swift */,
 				2D47FB5A27E37FDC00FC699F /* MainViewController.swift */,
 			);
 			path = ViewContollers;
+			sourceTree = "<group>";
+		};
+		2DBB4EAF27EA392300CEA2FB /* BottomSheet */ = {
+			isa = PBXGroup;
+			children = (
+				2DBB4E9827E9D85200CEA2FB /* ContentStackView.swift */,
+				2DBB4EAD27EA344F00CEA2FB /* BottomSheetView.swift */,
+				2DBB4EAB27EA0CDD00CEA2FB /* WelcomeBottomSheetView.swift */,
+			);
+			path = BottomSheet;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +149,8 @@
 			dependencies = (
 			);
 			name = "IET Calendar";
+			packageProductDependencies = (
+			);
 			productName = "IET Calendar";
 			productReference = 2D14F43927B56A7600F4A6AC /* IET Calendar.app */;
 			productType = "com.apple.product-type.application";
@@ -163,6 +179,8 @@
 				Base,
 			);
 			mainGroup = 2D14F43027B56A7600F4A6AC;
+			packageReferences = (
+			);
 			productRefGroup = 2D14F43A27B56A7600F4A6AC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -214,7 +232,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D14F44127B56A7600F4A6AC /* ViewController.swift in Sources */,
 				2D47FB5827E370F000FC699F /* ModelUtils.swift in Sources */,
 				2D47FB5627E3624C00FC699F /* GuideViewController.swift in Sources */,
 				2D14F45427B5754700F4A6AC /* GuideTextBlock.swift in Sources */,
@@ -222,6 +239,9 @@
 				2D14F45527B5754700F4A6AC /* Month.swift in Sources */,
 				2D47FB5B27E37FDC00FC699F /* MainViewController.swift in Sources */,
 				2D14F43F27B56A7600F4A6AC /* SceneDelegate.swift in Sources */,
+				2DBB4EAC27EA0CDD00CEA2FB /* WelcomeBottomSheetView.swift in Sources */,
+				2DBB4EAE27EA344F00CEA2FB /* BottomSheetView.swift in Sources */,
+				2DBB4E9927E9D85200CEA2FB /* ContentStackView.swift in Sources */,
 				2D14F45627B5754700F4A6AC /* ModelData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
