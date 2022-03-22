@@ -26,9 +26,7 @@ class GuideViewController: UIViewController {
 
     let textView = UITextView()
     textView.text = String(block.id) + ". " + block.description
-    textView.textColor = .white
-    textView.font = .boldSystemFont(ofSize: 17)
-    
+
     textView.translatesAutoresizingMaskIntoConstraints = false
     textView.isEditable = false
     textView.backgroundColor = .clear
@@ -39,6 +37,10 @@ class GuideViewController: UIViewController {
     textView.attributedText = NSAttributedString.makeHyperLink(for: GuideTextBlock.URL,
                                                                in: textView.text,
                                                                as: "по ссылке")
+    
+    textView.textColor = lightGray
+    textView.font = .boldSystemFont(ofSize: 17)
+    textView.tintColor = .link
 
     view.addSubview(textView)
 

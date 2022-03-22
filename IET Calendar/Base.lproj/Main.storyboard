@@ -25,23 +25,24 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="aCo-kh-ctI">
-                                <rect key="frame" x="20" y="120" width="374" height="662"/>
+                                <rect key="frame" x="20" y="120" width="374" height="652"/>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uTl-q9-H0s">
-                                <rect key="frame" x="132" y="802" width="150" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aHt-36-uWk">
+                                <rect key="frame" x="132" y="792" width="150" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="KC1-g7-Yw9"/>
-                                    <constraint firstAttribute="height" constant="40" id="p0T-Cc-cwY"/>
+                                    <constraint firstAttribute="height" constant="50" id="dka-B7-cDi" userLabel="height = 45"/>
+                                    <constraint firstAttribute="width" constant="150" id="wCh-Sg-xvw" userLabel="width = 175"/>
                                 </constraints>
                                 <color key="tintColor" red="0.91372549020000005" green="0.91372549020000005" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Продолжить" cornerStyle="medium">
-                                    <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" red="0.91372549020000005" green="0.91372549020000005" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    </backgroundConfiguration>
-                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="17"/>
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="19"/>
                                     <color key="baseForegroundColor" red="0.38038825990000003" green="0.38038951160000001" blue="0.38039231299999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.91372549020000005" green="0.91372549020000005" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="Ztq-WF-15I" kind="show" id="veb-zM-ONh"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ZkE-w6-dZI"/>
@@ -50,13 +51,13 @@
                             <constraint firstItem="ZkE-w6-dZI" firstAttribute="trailing" secondItem="hpV-ml-IHs" secondAttribute="trailing" constant="15" id="4Ww-da-F2X" userLabel="Safe Area.trailing = Добро пожаловать!.trailing + 20"/>
                             <constraint firstItem="aCo-kh-ctI" firstAttribute="top" secondItem="hpV-ml-IHs" secondAttribute="bottom" constant="15" id="7F0-iA-NPq"/>
                             <constraint firstItem="hpV-ml-IHs" firstAttribute="leading" secondItem="ZkE-w6-dZI" secondAttribute="leading" constant="20" id="EYn-yV-syi"/>
-                            <constraint firstItem="ZkE-w6-dZI" firstAttribute="bottom" secondItem="uTl-q9-H0s" secondAttribute="bottom" constant="20" id="HuI-Ya-xry"/>
-                            <constraint firstItem="uTl-q9-H0s" firstAttribute="top" secondItem="aCo-kh-ctI" secondAttribute="bottom" constant="20" id="OrO-wF-76J"/>
                             <constraint firstItem="aCo-kh-ctI" firstAttribute="leading" secondItem="ZkE-w6-dZI" secondAttribute="leading" constant="20" id="QjO-Tt-iJI"/>
+                            <constraint firstItem="aHt-36-uWk" firstAttribute="top" secondItem="aCo-kh-ctI" secondAttribute="bottom" constant="20" id="aKc-So-O7M"/>
                             <constraint firstItem="hpV-ml-IHs" firstAttribute="top" secondItem="ZkE-w6-dZI" secondAttribute="top" constant="20" id="dOu-KI-6fC"/>
+                            <constraint firstItem="ZkE-w6-dZI" firstAttribute="bottom" secondItem="aHt-36-uWk" secondAttribute="bottom" constant="20" id="e9j-lr-OXz"/>
                             <constraint firstItem="aCo-kh-ctI" firstAttribute="centerX" secondItem="Tg1-Mt-OkO" secondAttribute="centerX" id="kMy-HZ-aXE"/>
                             <constraint firstItem="ZkE-w6-dZI" firstAttribute="trailing" secondItem="aCo-kh-ctI" secondAttribute="trailing" constant="20" id="sFM-Ye-MvQ"/>
-                            <constraint firstItem="uTl-q9-H0s" firstAttribute="centerX" secondItem="Tg1-Mt-OkO" secondAttribute="centerX" id="uBZ-VZ-6Cu"/>
+                            <constraint firstItem="aHt-36-uWk" firstAttribute="centerX" secondItem="Tg1-Mt-OkO" secondAttribute="centerX" id="tnT-hg-Po5"/>
                         </constraints>
                     </view>
                     <connections>
@@ -70,7 +71,7 @@
         <!--MainScreen-->
         <scene sceneID="TeB-aS-JWJ">
             <objects>
-                <viewController title="MainScreen" id="Ztq-WF-15I" customClass="MainViewController" customModule="IET_Calendar" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="MainScreen" modalPresentationStyle="fullScreen" id="Ztq-WF-15I" customClass="MainViewController" customModule="IET_Calendar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LYD-zy-6RQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -88,6 +89,7 @@
                             <constraint firstItem="mHN-Dd-iL6" firstAttribute="leading" secondItem="nQi-eH-nAC" secondAttribute="leading" id="y3u-Gh-fjT"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Hru-Ed-CWU"/>
                     <connections>
                         <outlet property="sceneView" destination="mHN-Dd-iL6" id="ux8-st-EIk"/>
                     </connections>
